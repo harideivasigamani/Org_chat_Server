@@ -24,7 +24,9 @@ DROP TABLE IF EXISTS `admin`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `admin` (
   `name` varchar(45) DEFAULT NULL,
-  `id` varchar(45) DEFAULT NULL
+  `id` varchar(45) DEFAULT NULL,
+  `profile_photo` blob,
+  `password` varchar(45) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -100,7 +102,8 @@ CREATE TABLE `user` (
   `name` varchar(45) DEFAULT NULL,
   `id` varchar(45) DEFAULT NULL,
   `profile_photo` blob,
-  `inbox` tinyint(1) DEFAULT NULL
+  `inbox` tinyint(1) DEFAULT NULL,
+  `password` varchar(45) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -122,4 +125,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-11-23  6:33:17
+-- Dump completed on 2018-11-23  6:48:19
